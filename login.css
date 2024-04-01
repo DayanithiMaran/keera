@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+   background: rgb(240, 245, 248);
+}
+
+.mainlogin{
+
+    max-width: 100%;
+    margin-top: 11%;
+}
+.login{
+    margin-left: 280px;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.login1{
+    font-size: 35px;
+    margin-top: 70px;
+
+}
+.login1 h1{
+    color: rgb(0, 102, 255);
+    margin-bottom: 10px;
+}
+.login2{
+    width: 400px;
+    padding:22px 18px 18px 18px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 15px  rgb(215, 213, 213);
+
+   
+}
+.login2 input,button{
+   display: flex;
+    padding: 15px 15px;
+    width: 100%;
+   margin-bottom: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 208, 208);
+    outline: none;
+
+
+}
+.login2 .hello {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gainsboro;
+    padding: 0 20px 20px 20px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+
+
+}
+.login2 .hello:hover{
+    text-decoration: underline;
+
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   border: none;
+   outline: none;
+   padding: 12px 0;
+   font-weight: 600;
+   font-size: 15px;
+   width: 210px;
+   margin-left: 90px;
+   background-color: rgb(114, 208, 96);
+   color: white;
+   cursor: pointer;
+}
+
+input[type=submit]{
+    background-color: rgb(0, 102, 255);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+  
+}
+.dei {
+    text-decoration: none;
+   
+    cursor: pointer;
+}

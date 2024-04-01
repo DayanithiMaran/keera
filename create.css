@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    
+    /* background-color: rgba(255,255,255,0.5);
+    z-index: -1; */
+    background: url(images/blur.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+  
+}
+.whole{
+  
+
+    background: rgba(255,255,255,0.7);
+   
+  
+   
+}
+.cancel{
+    display: flex;
+    position: absolute;
+    top: 5px;
+   right: 5px;
+   
+}
+
+.maincon{
+   margin-top: 3.5%;
+   margin-left: 35%;
+   width: 450px;
+   padding: 20px;
+   background: white;
+   box-shadow: 5px 5px 15px rgb(225, 224, 224);
+   border-radius: 10px;
+   
+
+  
+}
+.submain{
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+    padding-bottom: 13px;
+  position: relative;
+
+}
+.submain p{
+    color: rgb(101, 99, 99);
+}
+.input1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.input1 input{
+    padding: 10px 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(169, 166, 166);
+    background-color: rgb(247, 244, 244);
+    color: rgb(88, 87, 87);
+    font-size: 15px;
+}
+.input2{
+    margin-top: 5px;
+}
+.input2 input{
+    width: 100%;
+    padding: 10px 7px;
+    border-radius: 5px;
+    border: 1px solid rgb(169, 166, 166);
+    margin-top: 10px;
+    background-color: rgb(247, 244, 244);
+    color: rgb(88, 87, 87);
+    font-size: 15px;
+
+
+
+}
+.birth{
+    margin-top: 15px;
+    display: block;
+}
+.selection{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+}
+
+
+#year,#month,#date {
+    width: 120px;
+    padding: 10px ;
+    border-radius: 5px;
+}
+.gender{
+    display: block;
+}
+.radio{
+    display: flex;
+    justify-content: space-between;
+}
+.radio1{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(123, 122, 122);
+   
+    width: 120px;
+    padding: 10px;
+    border-radius: 5px;
+cursor: pointer;
+}
+.radio1 label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    cursor: pointer;
+}
+
+ .got{
+
+    width: 200px;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 7px;
+    margin-left: 100px;
+    margin-top: 30px;
+    display: flex;
+
+    justify-content: center;
+    cursor: pointer;
+   
+  
+}
+.agree{
+    margin-bottom: 10px 0 30px 0;
+}
+.agree p{
+    margin: 15px 0;
+    font-size: 15px;
+}
+.agree a{
+    text-decoration: none;
+}
+
+
+#txt{
+    padding: 5px 10px;
+    border-radius: 5px;
+   position: relative;
+   
+}

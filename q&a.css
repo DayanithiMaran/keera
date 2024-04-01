@@ -1,0 +1,1205 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    top: 0;
+    background: #f5f8f8;
+  
+    
+    
+}
+/* ------------------------------------------------NAV BAR----------------------------------------- */
+
+.main-navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgb(23, 32, 56);
+    color: whitesmoke;
+    z-index: 1;
+    
+
+}
+.left-navbar{
+
+    display: flex;
+    align-items: center;
+    margin: 5px 5px 5px 50px;
+}
+.middle-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -30px;
+    
+   
+}
+.middle-navbar a{
+    margin: 10px;
+    padding: 10px 28px 10px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+   
+    
+}
+.middle-navbar i{
+    position: absolute;
+    top: 5px;
+}
+.middle-navbar a:hover{
+    background: linear-gradient(140deg, rgb(200, 91, 234) , rgb(113, 112, 227) 65.00%, rgb(216, 100, 119)99.00%);
+    box-shadow: 0px 0px 10px 0px  rgb(73, 71, 184);    /* background: linear-gradient(132deg, rgb(255, 127, 56) 0.00%, rgb(255, 196, 108) 100.00%); */
+                border-radius: 30px;
+}
+.right-navbar{
+  
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    
+  
+  
+}
+.right-navbar a{
+   margin: 14px 0 14px 14px;
+   padding: 10px 28px 10px 25px;
+   text-decoration: none;
+   font-size: 18px;
+   color: white;
+   
+   
+}
+.right-navbar i{
+    top: 5px;
+    
+    position: absolute;
+}
+.active{
+    background: linear-gradient(140deg, rgb(200, 91, 234) , rgb(113, 112, 227) 65.00%, rgb(216, 100, 119)99.00%);
+    box-shadow: 0px 0px 10px 0px  rgb(73, 71, 184);
+        border-radius: 30px;
+
+}
+.pro{
+    margin-right: 15px;
+}
+.right-navbar a:hover{
+    background: linear-gradient(140deg, rgb(200, 91, 234) , rgb(113, 112, 227) 65.00%, rgb(216, 100, 119)99.00%);
+    box-shadow: 0px 0px 10px 0px  rgb(73, 71, 184);
+    border-radius: 30px; 
+}
+.search-navbar{
+    background-color: white;
+    border-radius: 18px;
+    width: 380px;
+    margin: 0 -50px 0 50px;
+    
+}
+.search-navbar input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 45px 10px 45px;
+    border-radius: 15px;
+    background: url(images/search.svg) no-repeat;
+    background-position: 10px 7px;
+}
+
+.user:hover{
+    transform: scale(1.1);
+}
+/* ---------------------------------------------------NAV LOGO  IMAGE ------------------------------------------ */
+
+
+
+
+/* -------------------------------------------------DROPDOWN CON STYLE----------------------------------- */
+button{
+    cursor: pointer;
+}
+
+.exdrop:hover .ex{
+    background: linear-gradient(140deg, rgb(200, 91, 234) , rgb(113, 112, 227) 65.00%, rgb(216, 100, 119)99.00%);
+    box-shadow: 0px 0px 10px 0px  rgb(73, 71, 184);
+            border-radius: 30px;
+}
+.course:hover .cour{
+    background: linear-gradient(140deg, rgb(200, 91, 234) , rgb(113, 112, 227) 65.00%, rgb(216, 100, 119)99.00%);
+    box-shadow: 0px 0px 10px 0px  rgb(73, 71, 184);
+            border-radius: 30px;
+}
+.more:hover .mor{
+    background: linear-gradient(140deg, rgb(200, 91, 234) , rgb(113, 112, 227) 65.00%, rgb(216, 100, 119)99.00%);
+    box-shadow: 0px 0px 10px 0px  rgb(73, 71, 184);
+            border-radius: 30px;
+}
+.middle-navbar img{
+    width: 25px;
+    margin-right: 10px;
+    
+}
+.exdrop{
+    display: inline-block;
+    position: relative;
+}
+.ex2drop{
+    display: none;
+    position: absolute;
+    min-width: 280px;
+    padding: 0 5px 0 5px;
+    margin: 10px;
+    background: linear-gradient(306deg, rgb(251, 251, 255) 0.00%, rgb(215, 223, 252) 100.00%);    
+    box-shadow: 2px 5px 10px 0px rgb(205, 203, 203);
+    color: black;
+    border-radius: 10px;
+    z-index: 1;
+    height: 628px;
+}
+.ex2drop span{
+    display: flex;
+    align-items: center;
+    background: white;
+    color: black;
+   padding: 15px ;
+   width: 250px;
+   border-radius: 10px;
+   position: relative;
+  margin-top: 10px;
+  margin-left: 9px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.ex2drop span:hover{
+    background: linear-gradient(132deg, rgb(115, 93, 142) 0.00%, rgb(58, 33, 86) 100.00%);   
+    color: whitesmoke; 
+        border-radius: 10px;
+}
+
+.exdrop:hover .ex2drop{
+    display: block;
+}
+
+.exam1{
+    
+    display: inline-block;
+    width: 270px;
+   
+   
+    
+}
+.exam1 span{
+   position: relative;
+    
+}
+.exam1 span #mamapayale{
+   top: 14px;
+   left: 220px;
+    position: absolute;
+
+
+}
+.exam1 span #mamapayale:hover{
+    transform: scale(1.2);
+}
+.subexam1{
+    display: none;
+    position: absolute;
+    min-width: 350px;
+    background: linear-gradient(306deg, rgb(251, 251, 255) 0.00%, rgb(215, 223, 252) 100.00%);    
+    box-shadow: 2px 5px 10px 0px rgb(205, 203, 203);
+        top: 0;
+    z-index: 1000;
+    left: 98%;
+    height: 628px;
+    border-radius: 5px;
+
+    
+}
+.subexam1 p{
+    background-color: white;
+    margin: 12.5px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.subexam1 p:hover{
+    transform: scale(1.1);
+}
+
+.exam1:hover .subexam1{
+    display: block;
+  
+  
+}
+
+.more{
+    display: inline-block;
+    position: relative;
+}
+.submore{
+    display: none;
+    position: absolute;
+    min-width: 230px;
+    margin: 10px;
+    color: black;
+    border-radius: 10px;
+    z-index: 1;
+    background: linear-gradient(306deg, rgb(251, 251, 255) 0.00%, rgb(215, 223, 252) 100.00%);    
+    box-shadow: 2px 5px 10px 0px rgb(205, 203, 203);
+    transition: all 0.5s ease;
+
+}
+.submore p{
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.5s ease;
+
+   border-radius: 10px;
+    padding: 15px;
+    
+}
+.submore p:hover{
+    background: linear-gradient(132deg, rgb(115, 93, 142) 0.00%, rgb(58, 33, 86) 100.00%);   
+    color: whitesmoke; 
+   
+
+}
+.more:hover .submore{
+    display: block;
+}
+
+
+
+.course{
+    display: inline-block;
+    position: relative;
+}
+.subcourse{
+    display: none;
+    position: absolute;
+    min-width: 220px;
+    margin: 10px;
+    background: linear-gradient(306deg, rgb(251, 251, 255) 0.00%, rgb(215, 223, 252) 100.00%);    
+    box-shadow: 2px 5px 10px 0px rgb(205, 203, 203);   
+     color: black;
+   
+    border-radius: 10px;
+    z-index: 1;
+}
+.subcourse a{
+     cursor: pointer;
+     display: flex;
+     margin: 10px;
+    border-radius: 10px;
+     color: black;
+     transition: all 0.5s ease;
+     font-size: 17px;
+
+     
+     
+}
+.subcourse a:hover{
+    background: linear-gradient(132deg, rgb(115, 93, 142) 0.00%, rgb(58, 33, 86) 100.00%);   
+    color: whitesmoke; 
+    border-radius: 10px;
+
+}
+.subcourse img{
+    width: 25px;
+    margin-right: 15px;
+}
+
+
+.course:hover .subcourse{
+    display: block;
+}
+
+/* ----------------------------------------------NAV BAR END------------------------------ */
+
+/* -----------------------main content----------------- */
+
+
+.firstmain{
+    width: 100%;
+    height: 230px;
+   
+   z-index: -1;
+}
+.subfirstmain{
+    max-width: 100%;
+    margin-left: -15px;
+ 
+}
+.subfirstmain span{
+    font-size: 30px;
+   display: flex;
+   justify-content: center;
+    padding: 40px 0 25px 0 ;
+    
+}
+.subfirstmain p{
+    display: inline;
+}
+.subfirstmain b {
+    margin-left: 15px;
+   
+}
+.arrow{
+display: flex;
+justify-content: center; 
+padding: 5px;   
+}
+.arrow i{
+    margin: 4px 5px 0 5px ;
+}
+.getbtn{
+    width: 180px;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(100, 239, 100);
+    color: white;
+   
+}
+.but{
+    margin: 25px;
+display: flex;
+justify-content: center;  
+ 
+}
+.but img{
+    width: 150px;
+    height: 45px;
+}
+
+
+.secondmain{
+  
+    max-width: 100%;
+    z-index: -1;
+    margin-top: 20px;
+
+    
+}
+.subsecond{
+   
+   display: flex;
+   margin-left: 250px;
+   width: 68%;
+   top: 30px;
+   box-shadow: 10px 10px 18px  rgb(233, 232, 232);
+   padding: 5px;
+   background: white;
+   border-radius: 15px;
+   
+}
+.shield{
+    display: flex;
+    align-items: center;
+    background: rgb(180, 239, 164);
+    border-radius: 8px;
+    padding: 18px;
+    width: 290px;
+  
+
+}
+
+.shield p{
+    font-size: 17px;
+    display: flex;
+   
+    align-items: center;
+   
+}
+
+.shield img{
+    margin-right: 15px;
+}
+.trophy p{
+    display: flex;
+    align-items: center;
+}
+.trophy{
+  
+   display: flex;
+   align-items: center;
+   margin-left: 30px;
+  
+}
+.trophy img{
+    margin-right: 15px;
+}
+
+
+.thirdmaincon{
+    width: 100%;
+    display: flex;
+   
+    margin-top: 60px;
+   
+}
+.subthirdmain{
+    margin-left: 250px;
+    width: 68%;
+    
+   
+
+}
+.subthirdmain span{
+    font-size: 23px;
+    display: flex;
+   padding-bottom: 13px;
+}
+.subthirdmain p{
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #919191;
+}
+.thirdmain{
+    display: flex;
+    background-color: white;
+    padding-top: 13px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    justify-content: space-evenly;
+    box-shadow: 3px 3px 8px  rgb(233, 232, 232);
+
+    
+}
+.thirdmain p{
+   padding: 13px 20px 13px 20px;
+   border: 1px solid rgb(183, 181, 181);
+   border-radius: 40px;
+   color: rgb(179, 173, 173);
+    
+}
+.thirdssc{
+    background-color: hsl(189, 100%, 50%);
+   
+
+}
+
+.thirdmain p:hover{
+    border: 1px solid  hsl(195, 95%, 50%) ;
+    color:  hsl(195, 95%, 50%);
+}
+
+.divbox{
+  
+   display: flex;
+   justify-content: space-between;
+    margin-top: 15px;
+    
+}
+.floatboxes{
+    display: flex;
+    box-shadow: 3px 3px 8px  rgb(233, 232, 232);
+    margin-top: 10px;
+    padding: 10px;
+    width: 310px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+    transition: all 0.5s ease;
+    cursor: pointer;
+   
+   
+}
+.floatboxes img{
+    width: 45px;
+    margin-right: 16px;
+}
+.floatboxes p{
+    color: hsl(189, 100%, 50%);
+  margin-left: 50px;
+
+  font-size: 17px;
+}
+.boom{
+    margin-left: 30px;
+}
+.floatboxes i{
+    position: absolute;
+    right: 20px;
+    top: 28px;
+    color: gray;
+    font-size: 22px;
+}
+.floatboxes:hover{
+    transform: scale(1.1);
+}
+
+
+
+.fourthmaincon{
+    width: 100%;
+    margin-top: 135px;
+}
+.subfourthmain{
+    margin-left: 250px;
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+}
+.subfourthmain p{
+    font-size: 17px;
+    padding-bottom: 20px;
+    
+}
+.four1 img{
+    padding: 120px 80px 0 0;
+    width: 550px;
+
+}
+.four2 h1{
+
+    margin-bottom: 18px;
+}
+.four2 p{
+    margin: 10;
+}
+.four2 span{
+    display: flex;
+    margin-top: 5px;
+   
+}
+.four2 strong{
+   display: flex;
+    font-size: 15px;
+    margin-top: 30px ;
+    
+}
+.four3{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    margin-bottom: 25px;
+    
+  
+  
+  
+
+}
+.four3 p{
+  font-size: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ display: flex;
+ align-items: center;
+padding: 15px 15px 15px 0;
+    margin: 10px 18px 10px 0;
+  width: 220px;
+  box-shadow: 3px 3px 8px  rgb(233, 232, 232);
+border-radius: 10px;
+transition: all 0.5s ease;
+ 
+}
+.four3 p:hover{
+    transform: scale(1.1);
+}
+.four3 img{
+   margin-right: 15px;
+}
+.boombox{
+    padding: 15px 20px ;
+    background: rgb(23, 209, 242);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.fivthmaincon{
+    width: 100%;
+   margin-top: 120px;
+}
+.subfivthmain{
+    margin-left: 250px;
+    width: 68%;
+
+}
+.fivebox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.five2{
+    display: flex;
+    align-items: center;
+    width: 220px;
+    border-radius: 15px;
+    padding: 5px 30px 5px 10px;
+    background: white;
+    box-shadow: 3px 3px 8px  rgb(233, 232, 232);
+    transition: all 0.5s ease;
+
+
+
+}
+.five2:hover{
+    transform: scale(1.1);
+}
+.five2 img{
+    margin-right: 12px;
+}
+.five1 span{
+    border-left: 5px solid green;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 3px 8px 3px 20px;
+   
+}
+.five1 b{
+    color: green;
+}
+.five1 p{
+    margin: 25px 0 0 0;
+    color: #818080;
+    font-size: 15px;
+}
+
+
+
+.sixthmaincon{
+    width: 100%;
+    margin-top: 80px;
+
+}
+.subsixthmain{
+    margin-left: 250px;
+    width: 68%;
+  
+   display: flex;
+    justify-content: space-between;
+
+
+}
+.six1{
+
+   width: 700px;
+   padding: 25px 25px 25px 0;
+   margin-top: 140px;
+   
+}
+.six1 span{
+    display: flex;
+    font-size: 30px;
+    font-weight: 550;
+    margin: 25px 0 20px 0;
+}
+.six1 p{
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px 5px 5px 0;
+}
+.sixbutton{
+    margin-top: 40px;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(104, 242, 104);
+    color: white;
+    border-radius: 5px;
+}
+.six2{
+    width: 580px;
+    padding: 20px;
+    
+
+
+    
+  
+}
+.six2 p{
+    line-height: 22px;
+    font-size: 14px;
+   
+    color: #6a6969;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.six3 p{
+    line-height: 22px;
+    font-size: 14px;
+   
+    color: #6a6969;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.hello:hover{
+    transform: scale(1.1);
+}
+.hi:hover{
+    transform: scale(1.1);
+}
+.dk:hover{
+    transform: scale(1.1);
+}
+.daya:hover{
+    transform: scale(1.1);
+}
+.six3{
+    width: 550px;
+    margin-top: 30px;
+    padding: 20px 0 20px 5px ;
+
+}
+.subsix{
+    padding: 40px 15px 45px 15px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px  rgb(217, 216, 216);
+
+
+}
+.subsix h4{
+    font-size: 17px;
+    margin: 15px 0;
+}
+.six2 img{
+    margin-bottom: 30px;
+}
+.six3 img{
+    margin-bottom: 30px;
+}
+.hello{
+    background-color: rgb(238, 250, 232);
+    transition: all 0.5s ease;
+}
+.dk{
+    background-color: rgb(246, 242, 223);
+    transition: all 0.5s ease;
+}
+.hi{
+    background-color: rgb(251, 236, 243);
+    transition: all 0.5s ease;
+}
+.daya{
+    background-color: rgb(239, 236, 249);
+    transition: all 0.5s ease;
+}
+
+
+
+.seventhmaincon{
+    width: 100%;
+    margin-top: 80px;
+}
+.subseventhmain{
+    margin-left: 250px;
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seven1 h1{
+    line-height: 37px;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+
+
+.eigthmaincon{
+    width: 100%;
+}
+.subeigthmain{
+    margin-left: 250px;
+    width: 68%;
+    display: flex;
+    align-items: center;
+}
+
+.eigth1{
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    /* outline: 5px solid rgb(212, 97, 97); */
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 8px  rgb(217, 216, 216);
+
+
+}
+.gopal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 28px 30px 28px;
+    border-radius: 10px;
+    background-color: rgb(246, 233, 203);
+    transition: all 0.5s ease;
+
+}
+.gopal:hover{
+    transform: scale(1.1);
+}
+.eigth2:hover{
+    transform: scale(1.1);
+}
+.eigth1 b{
+    font-size: 30px;
+}
+.eigth1 p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.sethapayale{
+    display: flex;
+    margin-left: 25px;
+    padding: 8px;
+    border-radius: 10px;
+    height: 198px;
+    align-items: center;
+    box-shadow: 3px 3px 8px  rgb(217, 216, 216);
+
+}
+.eigth2 img{
+    display: block;
+    margin-left: 18px;
+    /* margin: 0 0 15px 0; */
+   
+  
+}
+.eigth2{
+    padding:0 40px ;
+    text-align: center;
+    margin-left: 8px;
+    border-right: 2px solid gainsboro;
+    transition: all 0.5s ease;
+  
+}
+.eigth2:last-child{
+    border-right: none;
+}
+.eigth2 b{
+    font-size: 30px;
+    padding: 10px 0 0 0;
+    display: block;
+
+    
+}
+.eigth2 p{
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0;
+}
+.lastbox{
+    margin-top: 130px;
+    position: relative;
+}
+.lastmain{
+    margin-left: 250px;
+   width: 68%;
+   display: flex;
+   justify-content: space-between;
+   background: rgb(16, 172, 245);
+   border-radius: 10px;
+   box-shadow: 3px 3px 8px  rgb(217, 216, 216);
+
+}
+.last1{
+   margin: 100px 50px;
+}
+.last1 span{
+    display: block;
+    font-size: 25px;
+    margin: 20px 0;
+}
+.will{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.will p{
+    padding: 8px 8px 8px 0;
+}
+.will i{
+    color: white;
+    margin-right: 8px;
+}
+.nope{
+    margin: 22px;
+}
+.nope img{
+    margin-right: 10px;
+    width: 130px;
+    height: 42px;
+}
+.meow{
+    width: 120px;
+    padding: 12px 10px;
+   margin-left: 102px;
+    font-size: 17px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(100, 239, 100);
+    color: white;
+}
+.mobile{
+    position: absolute;
+    right: 16%;
+    top: -15%;
+}
+/* -----------------------------FOOTER FOOTER------------------------ */
+
+ footer{
+    background-color: rgb(23, 32, 56);
+  margin-top: 200px;
+ 
+   
+  
+}
+.mainfooter{
+    width:80%;
+    background-color: rgb(23, 32, 56);
+ 
+  
+
+    margin: 70px 160px;
+    padding: 100px 20px 0 20px;
+
+}
+.subfooter{
+   display: flex;
+   height: 400px;
+    border-bottom: 1px solid rgb(57, 56, 56);
+    color: whitesmoke;
+    justify-content: space-between;
+
+}
+.footlogo img{
+    width: 160px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.loki {
+    display: flex;
+    align-items: center;
+   
+    
+    
+ 
+}
+.footlogo span{
+  
+    font-size: 35px;
+    margin-left: 8px;
+    
+    font-weight: 600;
+}
+.sublogo p{
+    text-decoration: none;
+    color: black;
+    color: rgb(173, 221, 242);
+}
+.sublogo a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    
+    
+}
+.foot2{
+   
+   margin: 50px 0 0 0;
+}
+.foot2 h5{
+    margin-bottom: 5px;
+}
+.foot3 h5{
+    margin-bottom: 5px;
+}
+.subfoot2 a{
+    color: rgb(173, 221, 242);
+    width: 180px;
+   display: block;
+   text-decoration: none;
+}
+.foot3{
+   
+    margin: 50px 0 0 0;
+
+}
+.subfoot3 a{
+    display: block;
+   text-decoration: none;
+   color: rgb(173, 221, 242);
+
+    width: 180px;
+   
+}
+.foot4{
+   
+    margin: 50px 0 0 0;
+
+
+}
+.foot4 img{
+    margin-top: 8px;
+ 
+   
+}
+.follow{
+    margin-top: 10px;
+}
+.follow img{
+    margin-right: 15px;
+
+}
+.copy{
+    display: flex;
+  
+    height: 50px;
+    margin-top: 20px;
+    background-color: r;
+}
+.copy a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+   
+    color: rgb(173, 221, 242);
+
+}
+.copy p{
+    margin-right: 250px;
+    color: rgb(173, 221, 242);
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------RESPONSIVE--------------------- */
+
+
+
+@media screen and (max-width:600px) {
+
+body{
+   
+}
+    
+.main-navbar{
+    max-width: 600px;
+    font-size: 10px;
+    
+}
+.left-navbar {
+    margin:0 ;
+    width: 50px;
+}
+.middle-navbar a{
+visibility: hidden;
+}
+.search-navbar {
+    padding: 0;
+    margin-left: -200px;
+    width: 180px;
+    background-color: rebeccapurple;
+}
+
+.slideshow{
+    display: none;
+}
+
+.firstmain,.subfirstmain{
+    width: 600px;
+    
+}
+.subfirstmain span{
+    display: block;
+    font-size: 18px;
+    margin-left: 72px;
+}
+.subfirstmain b{
+    display: block;
+    font-size: 15px;
+    margin-left: 0;
+}
+.arrow {
+    margin-left: -255px;
+    display: flex;
+    align-items: center;
+   
+}
+.arrow p{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.arrow i{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+.but{
+    display: block;
+    width: 150px;
+    margin-left: 100px;
+}
+.getbtn{
+    width: 150px;
+    font-size: 12px;
+    display: block;
+
+}
+.but img{
+    width: 150px;
+    display: block;
+
+}
+.secondmain{
+    margin-top: 100px;
+   
+}
+.subsecond{
+    display: block;
+    margin-left: 30px;
+    width: 260px;
+}
+.shield{
+    font-size: 10px;
+    padding: 5px;
+    width: 250px;
+}
+.trophy{
+    margin-top: 15px;
+}
+}
